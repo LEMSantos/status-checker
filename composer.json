@@ -1,0 +1,26 @@
+{
+    "version": "1.0",
+    "name": "sysvale/status-checker",
+    "description": "Pacote para verificar o status da aplicação",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Sysvale\\StatusChecker\\": "src",
+            "Tests\\": "tests"
+        }
+    },
+    "require": {
+        "php": ">=8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^7.39.0",
+        "phpunit/phpunit": "^9.5"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sysvale\\StatusChecker\\StatusCheckerServiceProvider"
+            ]
+        }
+    }
+}
